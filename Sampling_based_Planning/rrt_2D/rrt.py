@@ -11,7 +11,9 @@ import numpy as np
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
                 "/../../")
 
-from Sampling_based_Planning.rrt_2D import env, plotting, utils
+from Sampling_based_Planning.rrt_2D.common import env
+from Sampling_based_Planning.rrt_2D.common import plotting
+from Sampling_based_Planning.rrt_2D.common import utils
 
 
 class Node:

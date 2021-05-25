@@ -15,7 +15,9 @@ from scipy.spatial.transform import Rotation as Rot
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
                 "/../../")
 
-from Sampling_based_Planning.rrt_2D import env, plotting, utils
+from Sampling_based_Planning.rrt_2D.common import env
+from Sampling_based_Planning.rrt_2D.common import plotting
+from Sampling_based_Planning.rrt_2D.common import utils
 import CurvesGenerator.dubins_path as dubins
 import CurvesGenerator.draw as draw
 

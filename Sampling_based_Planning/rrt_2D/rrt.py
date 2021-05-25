@@ -107,6 +107,9 @@ def main():
     path = rrt.planning()
 
     if path:
+        print("Path Found!")
+        print('Samples: ', len(rrt.vertex))
+        print('Length of path: ', len(path))
         rrt.plotting.animation(rrt.vertex, path, "RRT", True)
     else:
         print("No Path Found!")
